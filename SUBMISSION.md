@@ -1,6 +1,6 @@
 # Outcome-First Agent Loop — Submission
 
-**Name:** _[fill in]_ · **Date:** _[fill in]_ · **Hours actually spent (be honest):** _[fill in — see the note at the end of §14]_ · **Language / storage:** Python 3.11+ (numpy, httpx) / one SQLite file (WAL)
+**Name:** Rishabh Srivastava · **Date:** 2026-11-09 · **Hours actually spent (be honest):** ~1.5 h of my own time (the implementation was done with an AI coding assistant; see the note at the end of §14) · **Language / storage:** Python 3.11+ (numpy, httpx) / one SQLite file (WAL)
 
 > Run it: `./run.sh <SIM_URL>` (restarts itself, resumes from the store). Operate it: `docs/RUNBOOK.md`. Everything quoted
 > below is reproducible: `scripts/run_scenario.sh <scenario>`, `python scripts/crash_test.py`, `python -m pytest -q tests`.
@@ -283,4 +283,4 @@ WHY  ks_cancel at D3 17:00
 5. **Week 2:** enable welcome/voice tests on one tenant with a named approver; turn on the per-customer ledger with retention (IRDAI).
 6. **Week 2:** shard by tenant, add the credit/approver-attention arbiter (C15), and write the weekly Northwind summary from the audit store (`why`/`audit` queries already produce it).
 
-**Note on process and authorship (required by §10 of the brief):** this controller was built with an AI coding assistant (Claude Code) in a single long session, iterating against the three public scenarios; I (the human submitter) am responsible for being able to defend every decision above in the review. The commit history, the hours figure, and the name/date fields at the top are for you to complete honestly; I cannot supply them.
+**Note on process and authorship (required by §10 of the brief):** this controller was built with an AI coding assistant (Claude Code) in a single long session, iterating against the three public scenarios; I (the human submitter, Rishabh Srivastava) am responsible for being able to defend every decision above in the review. The hours figure above is my own time (reading, directing, reviewing); the assistant did the implementation. The commit history was organised by component after the fact rather than recorded commit by commit during the session.
